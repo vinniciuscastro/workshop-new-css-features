@@ -6,10 +6,10 @@
 /* Can you center a div (both vertically and horizontally)? */
 
 .outside-div {
-
+    align-content: center;
     /* Another way to target the inside div is with nesting */
     & div {
-
+        margin: 0 auto;
     }
 }
 
@@ -27,9 +27,11 @@
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     --dropdown-height: 0px;
+    height: var(--dropdown-height);
 }
 .dropdown.open {
     /* Set a new variable height */
+    --dropdown-height: 200px;
 }
 
 /* Color Change */
@@ -46,17 +48,23 @@
 
 .box {
     /* Give the div a background */
+    background-color: var(--bg-color);
     transition: background-color 0.5s ease-in-out;
 }
 .box.dark {
     /* change the constant to be a darker color */
+    --bg-color: orange;
 }
 
 /* -------------------- Challenge 3 -------------------- */
-
+.root {
+    --bg-color: lightgray;
+    --text-color: black;
+}
 #light-dark {
     color-scheme: light dark; /* Needs to be in root or a specific area for changes */
-
+    --light-dark-primary: light-dark(white, black); /* Set variables for light and dark */
+    --light-dark-text: light-dark(black, white);
     /* Set variables for light and dark */
 }
 
@@ -77,7 +85,9 @@
 
 /* The divs are inside of the #has section */
 /* Target the right div only using the has psuedo selector and give it a different background color */
-
+#has div:has(.right) {
+    background-color: lightblue;
+}
 
 /* -------------------- Challenge 4 -------------------- */
 
