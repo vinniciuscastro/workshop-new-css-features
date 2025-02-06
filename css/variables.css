@@ -1,0 +1,26 @@
+/* You can define variables with types using @property */
+
+@property --new-logo-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: rebeccapurple;
+}
+
+:root {
+    /* These are string varibles on accessible to all HTML elements */
+    --primary-color: blanchedalmond;
+    --accent-color: orange;
+}
+
+a, p {
+    /* These are string variables on only specific HTML elements */
+    --color-on-dark: white;
+}
+
+div {
+    --logo-colored-border: 0.4rem solid var(--new-logo-color);
+}
+
+section {
+    --section-border: 0.5rem dashed var(--primary-color);
+}

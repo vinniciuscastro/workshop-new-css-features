@@ -1,0 +1,90 @@
+@import "./variables.css";
+@import "./styles.css";
+
+
+/* -------------------- Challenge 1 -------------------- */
+/* Can you center a div (both vertically and horizontally)? */
+
+.outside-div {
+
+    /* Another way to target the inside div is with nesting */
+    & div {
+
+    }
+}
+
+
+/* -------------------- Challenge 2 -------------------- */
+
+/* Using Variables in Animations */
+/* Dropdown */
+@property --dropdown-height {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0px;
+}
+.dropdown {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    --dropdown-height: 0px;
+}
+.dropdown.open {
+    /* Set a new variable height */
+}
+
+/* Color Change */
+@property --bg-color {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: lightgray;
+}
+
+/* works the exact same */
+/* :root {
+    --bg-color: lightgray;
+} */
+
+.box {
+    /* Give the div a background */
+    transition: background-color 0.5s ease-in-out;
+}
+.box.dark {
+    /* change the constant to be a darker color */
+}
+
+/* -------------------- Challenge 3 -------------------- */
+
+#light-dark {
+    color-scheme: light dark; /* Needs to be in root or a specific area for changes */
+
+    /* Set variables for light and dark */
+}
+
+#light-dark {
+    background-color: var(--light-dark-primary);
+
+    & p, & h2 {
+        color: var(--light-dark-text);
+    }
+    & button {
+        color: var(--light-dark-text);
+        background-color: var(--light-dark-primary);
+        border: 0.2rem solid var(--light-dark-text);
+    }
+}
+
+/* -------------------- Challenge 3 -------------------- */
+
+/* The divs are inside of the #has section */
+/* Target the right div only using the has psuedo selector and give it a different background color */
+
+
+/* -------------------- Challenge 4 -------------------- */
+
+/* Go to the HMTL and expand the select element */
+
+/* -------------------- Challenge 4 -------------------- */
+
+/* Go learn more */
+/* https://developer.chrome.com/blog/whats-new-css-ui-2023 */
+/* https://developer.chrome.com/blog/new-in-web-ui-io-2024 */

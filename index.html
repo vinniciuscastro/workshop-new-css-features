@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 1</title>
+    <link rel="stylesheet" href="css/challenge.css">
+    <script src="scripts/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#alignment">Easy Vertical Alignment</a></li>
+                <li><a href="#animation">Animation</a></li>
+                <li><a href="#light-dark">Easy Dark Mode</a></li>
+                <li><a href="#light-dark">Has Pseudo Selector</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>WDD Society Workshop - New HTML, CSS, and JS features from the past couple years</h1>
+        <section id="alignment">
+            <h2>Can you center a div?</h2>
+            <article>
+                <div>
+                    <p>By the way, this is actually what CSS's logo looks like</p>
+                    <img src="images/css.webp" alt="new css logo">
+                </div>
+                <div class="outside-div">
+                    <div>
+                        <p>I am a Div</p>
+                    </div>
+                </div>
+                <div>
+                    <p>You can now center all of these in this way by default... anything that is display: block;</p>
+                    <ul>
+                        <li>p</li>
+                        <li>h1</li>
+                        <li>img</li>
+                        <li>div</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section id="animation">
+            <h2>@property css</h2>
+            <article>
+                <div>
+                    <button class="dropdown-button">Toggle Dropdown</button>
+                    <div class="dropdown">
+                        <p>Dropdown Content</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="color-changer">Change Color</button>
+                    <div class="box"></div>
+                </div>
+            </article>
+           
+        </section>
+        <section id="light-dark">
+            <button id="mode-switcher">Light</button>
+            <h2>Light/Dark Mode</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ut delectus laudantium porro quos illo maxime? Placeat reprehenderit sed distinctio</p>
+        </section>
+        <section id="has">
+            <div>
+                <p>I am a div</p>
+            </div>
+            <div>
+                <div>
+                    <p>I am a div in a div</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>You can use a hr tag in select elements</p>
+            <select name="foods" id="food-select">
+                <option value="">Select a food</option>
+                <hr>
+                <optgroup label="Dinner">
+                <option value="pizza">
+                    Pizza
+                </option>
+                <option value="burger">
+                    Burger
+                </option>
+                <optgroup label="Breakfast">
+                <option value="pancake">
+                    Pancakes
+                </option>
+                <option value="biscuits">
+                    Biscuits
+                </option>
+              </select>
+        </section>
+        <section>
+            <p>Check out more stuff</p>
+            <a href="https://developer.chrome.com/blog/whats-new-css-ui-2023">What's new in CSS and UI 2023</a>
+            <a href="https://developer.chrome.com/blog/new-in-web-ui-io-2024">What's new in CSS and UI 2024</a>
+        </section>
+    </main>
+</body>
+</html>
